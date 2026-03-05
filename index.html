@@ -2669,6 +2669,17 @@
             });
         }
 
+        // 修正後的 toggleDeleteMode (重新從 Firebase 取得資料並渲染)
+        function toggleDeleteMode() {
+            delModePlans = !delModePlans;
+            // 重新獲取目前日期的 Firebase 資料並重新渲染
+            const dayRef = database.ref(`plans/${selectedDay}`);
+            dayRef.once('value').then(snapshot => {
+                const plans = snapshot.val() || [];
+                renderPlansList(plans);
+            });
+        }
+
         // 其他原有函數保持不變
         function renderWeatherCards() {
             const row = document.getElementById('weather-row');
@@ -2700,8 +2711,6 @@
             const days = ["6MAR", "7MAR", "8MAR", "9MAR", "10MAR", "11MAR", "12MAR", "13MAR", "14MAR", "15MAR", "16MAR", "17MAR", "18MAR"];
             document.getElementById('scrolling-dates').innerHTML = days.map(d => `<button onclick="setDay('${d}')" class="date-btn ${d===selectedDay?'date-btn-active':''}">${d}</button>`).join('');
         }
-
-        function toggleDeleteMode() { delModePlans = !delModePlans; updatePlanUI(); }
 
         function toggleSightDeleteMode() { delModeSights = !delModeSights; renderSights(); }
 
