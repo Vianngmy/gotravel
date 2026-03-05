@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        /* 所有 CSS 樣式保持不變（與您原本提供的相同） */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -754,6 +753,7 @@
 
         .timeline-content {
             flex: 1;
+            min-width: 0; /* 防止內容溢出 */
         }
 
         .time-tag {
@@ -854,6 +854,7 @@
             overflow-x: auto;
             gap: 12px;
             padding: 5px 0;
+            width: 100%; /* 確保不超出父容器 */
             -ms-overflow-style: none;
             scrollbar-width: none;
         }
