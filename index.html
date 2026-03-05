@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
     <title>成都川西遊</title>
     
-    <!-- iPhone 主畫面圖示 - 請確認 apple-icon.png 存在於同一個資料夾 -->
+    <!-- iPhone 主畫面圖示 -->
     <link rel="apple-touch-icon" href="apple-icon.png">
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- 思源黑體 & 素材集市社會體 -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Serif+TC:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
+        /* 所有 CSS 樣式保持不變（與您原本提供的相同） */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -68,7 +68,6 @@
             align-items: center;
         }
 
-        /* 隱藏滾動條但保留功能 */
         .hide-scrollbar {
             -ms-overflow-style: none;
             scrollbar-width: none;
@@ -77,30 +76,24 @@
             display: none;
         }
 
-        /* 自訂滑軸樣式 */
         .custom-scrollbar::-webkit-scrollbar {
             width: 8px;
         }
-        
         .custom-scrollbar::-webkit-scrollbar-track {
             background: var(--modal-sight-bg);
         }
-        
         .custom-scrollbar::-webkit-scrollbar-thumb {
             background: var(--modal-sight-text);
             border-radius: 4px;
         }
-        
         .custom-scrollbar::-webkit-scrollbar-thumb:hover {
             background: #0f331c;
         }
-        
         .custom-scrollbar::-webkit-scrollbar-button {
             background: var(--modal-sight-text);
             height: 16px;
         }
 
-        /* ===== 標題區塊 - 固定寬度 458.05px ===== */
         .heading-section { 
             background-color: var(--heading-bg); 
             text-align: center; 
@@ -149,7 +142,6 @@
             background-image: repeating-linear-gradient(90deg, transparent, transparent 15px, var(--stripe-red) 15px, var(--stripe-red) 18px, transparent 18px, transparent 35px, var(--stripe-red) 35px, var(--stripe-red) 36px);
         }
 
-        /* ===== 主頁 - 寬度 458px，高度 480px，小圓點背景 ===== */
         #page-main {
             width: 458px;
             height: 480px;
@@ -162,7 +154,6 @@
             overflow-y: auto;
         }
 
-        /* ===== 機票滑動區 400*129 置中 ===== */
         .ticket-wrapper { 
             background-color: transparent;
             width: 400px;
@@ -181,7 +172,6 @@
             align-items: center;
         }
         
-        /* 機票卡片 340*111 */
         .ticket {
             background-color: #d9b7b0;
             min-width: 340px;
@@ -395,7 +385,6 @@
             color: #402509;
         }
 
-        /* ===== 天氣修飾條 - 130.07*62.67 置中 ===== */
         .weather-decoration-container {
             width: 458px;
             max-width: 100%;
@@ -444,7 +433,6 @@
             white-space: nowrap;
         }
 
-        /* ===== 天氣卡片滑動區 400*202 置中 ===== */
         .weather-scroll-row { 
             display: flex; 
             overflow-x: auto; 
@@ -461,7 +449,6 @@
             z-index: 5;
         }
         
-        /* 天氣卡片 148*166 */
         .weather-card { 
             min-width: 148px;
             background-color: #f2ebe4;
@@ -590,7 +577,6 @@
             display: block;
         }
 
-        /* ===== 行程頁 ===== */
         #page-itinerary {
             width: 458.05px;
             max-width: 100%;
@@ -900,7 +886,6 @@
             max-width: 100%;
         }
 
-        /* ===== 景點頁面 ===== */
         .sights-header {
             font-size: 18px;
             font-weight: normal;
@@ -1212,7 +1197,6 @@
             transition: background-color 0.2s;
         }
 
-        /* ===== 匯率頁面 ===== */
         #page-wallet {
             width: 458.05px;
             max-width: 100%;
@@ -1234,7 +1218,6 @@
             margin: 0 auto;
         }
 
-        /* ===== 清單頁 ===== */
         #page-list {
             width: 458.05px;
             max-width: 100%;
@@ -1246,7 +1229,6 @@
             background-size: 18.9px 18.9px;
         }
 
-        /* 清單頁 LOGO 切換按鈕 - 使用圖片 */
         .logo-selector-row {
             display: flex;
             justify-content: center;
@@ -1287,7 +1269,6 @@
             object-fit: cover;
         }
 
-        /* 行李清單卡片樣式 */
         .checklist-card {
             background-color: #f9f3e9;
             border: 2px solid #692c04;
@@ -1359,7 +1340,6 @@
             line-height: 1;
         }
 
-        /* 注意事項卡片樣式 */
         .notice-card {
             background-color: #fff3e0;
             border: 3px solid #c85e3d;
@@ -1464,7 +1444,6 @@
             background-color: #a5452a;
         }
 
-        /* 新增注意事項模態框 */
         .notice-modal {
             position: fixed;
             inset: 0;
@@ -1544,14 +1523,12 @@
             background-color: #8c2e27;
         }
 
-        /* ===== 頁面容器 ===== */
         .tab-page {
             margin: 0 auto;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* ===== 底部導航 ===== */
         .footer-nav { 
             position: fixed; 
             bottom: 0; 
@@ -1617,7 +1594,6 @@
         .hide { display: none !important; }
         .no-scrollbar::-webkit-scrollbar { display: none; }
 
-        /* ===== 新增行程模態框樣式 ===== */
         .modal-overlay {
             position: fixed;
             inset: 0;
@@ -1812,7 +1788,6 @@
             background-color: #9e1606;
         }
 
-        /* ===== 新增景點模態框樣式 ===== */
         .sight-modal-container {
             background-color: var(--modal-sight-bg);
             width: 360px;
@@ -2124,9 +2099,8 @@
             </div>
         </section>
 
-        <!-- 清單頁 - 使用圖片LOGO -->
+        <!-- 清單頁 -->
         <section id="page-list" class="tab-page hide">
-            <!-- 注意事項卡片 -->
             <div class="notice-card" id="notice-card">
                 <div class="notice-header">
                     <span>📌 注意事項</span>
@@ -2135,7 +2109,6 @@
                 <div id="notice-list"></div>
             </div>
 
-            <!-- LOGO 切換按鈕 - 使用圖片，請確認以下圖片檔案存在 -->
             <div class="logo-selector-row">
                 <button onclick="showChecklist('logo1', this)" class="logo-selector active">
                     <img src="LOGO1.png" alt="LOGO 1" class="logo-image">
@@ -2151,7 +2124,6 @@
                 </button>
             </div>
             
-            <!-- 行李清單卡片容器 -->
             <div id="checklist-container" class="px-2"></div>
         </section>
     </main>
@@ -2322,7 +2294,6 @@
                 <textarea id="sight-body" class="sight-modal-textarea" placeholder="簡單介紹" rows="2"></textarea>
             </div>
             
-            <!-- 封面照片 - 水平排列 -->
             <div class="sight-modal-file-group">
                 <div class="sight-modal-file-row">
                     <span class="sight-modal-file-label">封面照片</span>
@@ -2332,7 +2303,6 @@
                 <input type="file" id="sight-main-pic" accept="image/*" class="sight-modal-file-input" onchange="updateFileStatus('cover')">
             </div>
             
-            <!-- 相簿照片 - 水平排列 -->
             <div class="sight-modal-file-group">
                 <div class="sight-modal-file-row">
                     <span class="sight-modal-file-label">相簿照片 <span class="sight-modal-file-label-small">[可選三張]</span></span>
@@ -2349,8 +2319,24 @@
         </div>
     </div>
 
+    <!-- Firebase 設定與修改後的 JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/12.10.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/12.10.0/firebase-database-compat.js"></script>
     <script>
-        // 靜態天氣資料
+        // Firebase 初始化
+        const firebaseConfig = {
+            apiKey: "AIzaSyALLCMEOUQefktkR_GYLAy4Rh6vIUArUxU",
+            authDomain: "travel-c2b01.firebaseapp.com",
+            databaseURL: "https://travel-c2b01-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "travel-c2b01",
+            storageBucket: "travel-c2b01.firebasestorage.app",
+            messagingSenderId: "1017698453057",
+            appId: "1:1017698453057:web:2c7e28e42716ed528e68c0"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const database = firebase.database();
+
+        // 原有的變數和函數
         const WEATHER_POINTS = [
             { id: "chengdu", name: "成都市中心", image: "成都.jpeg" },
             { id: "kangding", name: "康定市", image: "康定市.jpeg" },
@@ -2385,7 +2371,6 @@
             "18MAR": { n: "返屋企啦", a: "香港", lat: 22.3193, lon: 114.1694 }
         };
 
-        // 行李清單資料
         const checklistData = {
             logo4: [
                 { heading: "重要物品", items: ["回鄉證", "人民幣", "電話卡"] },
@@ -2419,12 +2404,8 @@
             ]
         };
 
-        // 儲存每個項目的勾選狀態
         let checklistState = JSON.parse(localStorage.getItem('checklist_state') || '{}');
-        
-        // 儲存注意事項
         let notices = JSON.parse(localStorage.getItem('notices') || '[]');
-
         let selectedDay = "6MAR";
         let delModePlans = false;
         let delModeSights = false;
@@ -2433,89 +2414,102 @@
         let isMorningCall = false;
         let currentSightId = null;
 
-        window.onload = () => {
-            renderWeatherCards();
-            renderDateTabs();
-            updatePlanUI();
-            renderSights();
-            setupKeypad();
-            renderNotices();
-            
-            // 預設顯示 LOGO1 的清單
-            setTimeout(() => {
-                const firstLogo = document.querySelector('.logo-selector');
-                if (firstLogo) showChecklist('logo1', firstLogo);
-            }, 100);
-        };
+        // 原有的輔助函數 (compress, navToAddress 等保持不變)
+        function navToAddress(address) {
+            const decodedAddress = decodeURIComponent(address);
+            window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(decodedAddress)}&travelmode=driving`);
+        }
 
-        function renderWeatherCards() {
-            const row = document.getElementById('weather-row');
-            if(!row) return;
-            row.innerHTML = ""; 
-            
-            WEATHER_POINTS.forEach((p, index) => {
-                const data = weatherData[index % weatherData.length];
-                
-                row.innerHTML += `
-                    <div class="weather-card">
-                        <div class="weather-card-top">
-                            <span class="weather-temp-val">${data.temp}°C</span>
-                            <span class="weather-temp-range">${data.min}° ~ ${data.max}°</span>
-                            <i class="${data.icon} weather-icon"></i>
-                            <span class="weather-region">${p.name}</span>
-                        </div>
-                        <div class="weather-divider-container">
-                            <div class="weather-divider"></div>
-                            <div class="divider-left-circle"></div>
-                            <div class="divider-right-circle"></div>
-                        </div>
-                        <div class="weather-card-bottom">
-                            <img src="${p.image}" alt="${p.name}" class="weather-bottom-image" onerror="this.src='https://via.placeholder.com/148x82?text=${p.name}'">
-                        </div>
-                    </div>`;
+        function compress(file, quality = 0.6, width = 300) {
+            return new Promise((resolve, reject) => {
+                if (!file) { resolve(null); return; }
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = e => {
+                    const img = new Image();
+                    img.src = e.target.result;
+                    img.onload = () => {
+                        const canvas = document.createElement('canvas');
+                        const scale = width / img.width;
+                        canvas.width = width; 
+                        canvas.height = img.height * scale;
+                        const ctx = canvas.getContext('2d');
+                        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                        resolve(canvas.toDataURL('image/jpeg', quality));
+                    };
+                    img.onerror = reject;
+                };
+                reader.onerror = reject;
             });
         }
 
-        function renderDateTabs() {
-            const days = ["6MAR", "7MAR", "8MAR", "9MAR", "10MAR", "11MAR", "12MAR", "13MAR", "14MAR", "15MAR", "16MAR", "17MAR", "18MAR"];
-            document.getElementById('scrolling-dates').innerHTML = days.map(d => `<button onclick="setDay('${d}')" class="date-btn ${d===selectedDay?'date-btn-active':''}">${d}</button>`).join('');
+        function selectMorningCall() {
+            isMorningCall = true;
+            selectedCategory = 'morning';
+            document.getElementById('input-category').value = 'morning';
+            document.getElementById('morning-call-btn').classList.add('selected');
+            document.getElementById('category-food').classList.remove('selected');
+            document.getElementById('category-spot').classList.remove('selected');
+            const inputs = [
+                'input-drive','input-location','input-description','input-address',
+                'input-img1','input-img2','input-img3','input-img4','input-img5',
+                'input-caption1','input-caption2','input-caption3','input-caption4','input-caption5'
+            ].map(id => document.getElementById(id));
+            document.getElementById('input-time').classList.remove('disabled');
+            document.getElementById('input-time-period').classList.remove('disabled');
+            inputs.forEach(input => { if(input) { input.classList.add('disabled'); input.disabled = true; } });
         }
 
-        function setDay(d) { 
-            selectedDay = d; 
-            renderDateTabs(); 
-            updatePlanUI(); 
+        function selectCategory(cat) {
+            isMorningCall = false;
+            selectedCategory = cat;
+            document.getElementById('input-category').value = cat;
+            document.getElementById('morning-call-btn').classList.remove('selected');
+            document.getElementById('category-food').classList.remove('selected');
+            document.getElementById('category-spot').classList.remove('selected');
+            if (cat === 'food') document.getElementById('category-food').classList.add('selected');
+            else document.getElementById('category-spot').classList.add('selected');
+            document.querySelectorAll('.modal-input, .modal-select, .modal-textarea, input[type="file"]').forEach(input => {
+                input.classList.remove('disabled');
+                input.disabled = false;
+            });
         }
 
-        function updatePlanUI() {
-            document.getElementById('label-day').innerText = selectedDay.replace('MAR', '').padStart(2, '0');
-            
-            const h = STAY_LIST[selectedDay];
-            const hBox = document.getElementById('hotel-card-display');
-            if (h) {
-                hBox.innerHTML = `
-                    <div style="grid-column: span 1">
-                        <p class="hotel-h3">今晚瞓呢到</p>
-                        <h4 class="hotel-name">${h.n}</h4>
-                        <p class="hotel-addr">${h.a}</p>
-                    </div>
-                    <div class="h-24 rounded-2xl overflow-hidden border border-white/20">
-                        <iframe width="100%" height="100%" frameborder="0" src="https://www.openstreetmap.org/export/embed.html?bbox=${h.lon-0.005},${h.lat-0.005},${h.lon+0.005},${h.lat+0.005}&layer=mapnik&marker=${h.lat},${h.lon}"></iframe>
-                    </div>
-                    <button onclick="navGps('${h.a}')" class="gps-button">即時GPS導航</button>`;
+        function resetModal() {
+            isMorningCall = false;
+            selectedCategory = '';
+            document.getElementById('input-category').value = '';
+            document.getElementById('morning-call-btn').classList.remove('selected');
+            document.getElementById('category-food')?.classList.remove('selected');
+            document.getElementById('category-spot')?.classList.remove('selected');
+            document.getElementById('input-time').value = '';
+            document.getElementById('input-time-period').value = '';
+            document.getElementById('input-drive').value = '';
+            document.getElementById('input-location').value = '';
+            document.getElementById('input-description').value = '';
+            document.getElementById('input-address').value = '';
+            document.querySelectorAll('.modal-input, .modal-select, .modal-textarea, input[type="file"]').forEach(input => {
+                input.classList.remove('disabled');
+                input.disabled = false;
+            });
+            for (let i = 1; i <= 5; i++) {
+                const imgInput = document.getElementById(`input-img${i}`);
+                const captionInput = document.getElementById(`input-caption${i}`);
+                if (imgInput) { imgInput.value = ''; imgInput.classList.remove('disabled'); imgInput.disabled = false; }
+                if (captionInput) { captionInput.value = ''; captionInput.classList.remove('disabled'); captionInput.disabled = false; }
             }
+        }
 
-            const db = JSON.parse(localStorage.getItem('plans_db_v26') || '{}');
-            const items = db[selectedDay] || [];
-            
-            items.sort((a, b) => {
+        // 新版的 renderPlansList
+        function renderPlansList(plans) {
+            plans.sort((a, b) => {
                 if (a.time && b.time) return a.time.localeCompare(b.time);
                 if (a.time) return -1;
                 if (b.time) return 1;
                 return 0;
             });
-            
-            document.getElementById('plans-list').innerHTML = items.map(p => {
+
+            document.getElementById('plans-list').innerHTML = plans.map(p => {
                 const timeDisplay = p.time ? p.time : (p.period ? p.period : '');
                 const isMorning = p.cat === 'morning';
                 const lineClass = isMorning ? 'morning' : (p.cat === 'food' ? 'food' : 'spot');
@@ -2559,142 +2553,43 @@
             }).join('');
         }
 
-        function navToAddress(address) {
-            const decodedAddress = decodeURIComponent(address);
-            window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(decodedAddress)}&travelmode=driving`);
-        }
-
-        function compress(file, quality = 0.6, width = 300) {
-            return new Promise((resolve, reject) => {
-                if (!file) {
-                    resolve(null);
-                    return;
-                }
-                
-                const reader = new FileReader();
-                reader.readAsDataURL(file);
-                reader.onload = e => {
-                    const img = new Image();
-                    img.src = e.target.result;
-                    img.onload = () => {
-                        const canvas = document.createElement('canvas');
-                        const scale = width / img.width;
-                        canvas.width = width; 
-                        canvas.height = img.height * scale;
-                        const ctx = canvas.getContext('2d');
-                        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-                        resolve(canvas.toDataURL('image/jpeg', quality));
-                    };
-                    img.onerror = reject;
-                };
-                reader.onerror = reject;
+        // 修改後的 setDay
+        function setDay(d) {
+            selectedDay = d;
+            renderDateTabs();
+            // 監聽 Firebase 資料變化
+            const dayRef = database.ref(`plans/${selectedDay}`);
+            dayRef.off(); // 移除舊監聽
+            dayRef.on('value', (snapshot) => {
+                const plans = snapshot.val() || [];
+                // 更新 localStorage 作為快取（可選）
+                const db = JSON.parse(localStorage.getItem('plans_db_v26') || '{}');
+                db[selectedDay] = plans;
+                localStorage.setItem('plans_db_v26', JSON.stringify(db));
+                renderPlansList(plans);
             });
         }
 
-        function selectMorningCall() {
-            isMorningCall = true;
-            selectedCategory = 'morning';
-            document.getElementById('input-category').value = 'morning';
-            
-            document.getElementById('morning-call-btn').classList.add('selected');
-            document.getElementById('category-food').classList.remove('selected');
-            document.getElementById('category-spot').classList.remove('selected');
-            
-            const inputs = [
-                document.getElementById('input-drive'),
-                document.getElementById('input-location'),
-                document.getElementById('input-description'),
-                document.getElementById('input-address'),
-                document.getElementById('input-img1'),
-                document.getElementById('input-img2'),
-                document.getElementById('input-img3'),
-                document.getElementById('input-img4'),
-                document.getElementById('input-img5'),
-                document.getElementById('input-caption1'),
-                document.getElementById('input-caption2'),
-                document.getElementById('input-caption3'),
-                document.getElementById('input-caption4'),
-                document.getElementById('input-caption5')
-            ];
-            
-            document.getElementById('input-time').classList.remove('disabled');
-            document.getElementById('input-time-period').classList.remove('disabled');
-            
-            inputs.forEach(input => {
-                if (input) {
-                    input.classList.add('disabled');
-                    input.disabled = true;
-                }
-            });
-        }
-
-        function selectCategory(cat) {
-            isMorningCall = false;
-            selectedCategory = cat;
-            document.getElementById('input-category').value = cat;
-            
-            document.getElementById('morning-call-btn').classList.remove('selected');
-            
-            const foodBtn = document.getElementById('category-food');
-            const spotBtn = document.getElementById('category-spot');
-            
-            foodBtn.classList.remove('selected');
-            spotBtn.classList.remove('selected');
-            
-            if (cat === 'food') {
-                foodBtn.classList.add('selected');
-            } else {
-                spotBtn.classList.add('selected');
-            }
-            
-            const allInputs = document.querySelectorAll('.modal-input, .modal-select, .modal-textarea, input[type="file"]');
-            allInputs.forEach(input => {
-                input.classList.remove('disabled');
-                input.disabled = false;
-            });
-        }
-
-        function resetModal() {
-            isMorningCall = false;
-            selectedCategory = '';
-            document.getElementById('input-category').value = '';
-            
-            document.getElementById('morning-call-btn').classList.remove('selected');
-            
-            const foodBtn = document.getElementById('category-food');
-            const spotBtn = document.getElementById('category-spot');
-            if (foodBtn) foodBtn.classList.remove('selected');
-            if (spotBtn) spotBtn.classList.remove('selected');
-            
-            document.getElementById('input-time').value = '';
-            document.getElementById('input-time-period').value = '';
-            document.getElementById('input-drive').value = '';
-            document.getElementById('input-location').value = '';
-            document.getElementById('input-description').value = '';
-            document.getElementById('input-address').value = '';
-            
-            const allInputs = document.querySelectorAll('.modal-input, .modal-select, .modal-textarea, input[type="file"]');
-            allInputs.forEach(input => {
-                input.classList.remove('disabled');
-                input.disabled = false;
-            });
-            
-            for (let i = 1; i <= 5; i++) {
-                const imgInput = document.getElementById(`input-img${i}`);
-                const captionInput = document.getElementById(`input-caption${i}`);
-                if (imgInput) {
-                    imgInput.value = '';
-                    imgInput.classList.remove('disabled');
-                    imgInput.disabled = false;
-                }
-                if (captionInput) {
-                    captionInput.value = '';
-                    captionInput.classList.remove('disabled');
-                    captionInput.disabled = false;
-                }
+        // 簡化後的 updatePlanUI (只更新飯店卡片)
+        function updatePlanUI() {
+            document.getElementById('label-day').innerText = selectedDay.replace('MAR', '').padStart(2, '0');
+            const h = STAY_LIST[selectedDay];
+            const hBox = document.getElementById('hotel-card-display');
+            if (h) {
+                hBox.innerHTML = `
+                    <div style="grid-column: span 1">
+                        <p class="hotel-h3">今晚瞓呢到</p>
+                        <h4 class="hotel-name">${h.n}</h4>
+                        <p class="hotel-addr">${h.a}</p>
+                    </div>
+                    <div class="h-24 rounded-2xl overflow-hidden border border-white/20">
+                        <iframe width="100%" height="100%" frameborder="0" src="https://www.openstreetmap.org/export/embed.html?bbox=${h.lon-0.005},${h.lat-0.005},${h.lon+0.005},${h.lat+0.005}&layer=mapnik&marker=${h.lat},${h.lon}"></iframe>
+                    </div>
+                    <button onclick="navGps('${h.a}')" class="gps-button">即時GPS導航</button>`;
             }
         }
 
+        // 修改後的 handleSavePlan
         async function handleSavePlan() {
             try {
                 const time = document.getElementById('input-time').value;
@@ -2704,48 +2599,28 @@
                 const desc = document.getElementById('input-description').value;
                 const address = document.getElementById('input-address').value;
                 const cat = document.getElementById('input-category').value;
-                
-                if(!cat) {
-                    alert('請選擇分類！');
-                    return;
-                }
-                
-                if(!time && !period) {
-                    alert('請填寫具體時間 或 選擇時段！');
-                    return;
-                }
-                
+
+                if (!cat) { alert('請選擇分類！'); return; }
+                if (!time && !period) { alert('請填寫具體時間 或 選擇時段！'); return; }
+
                 if (cat === 'morning') {
-                    const db = JSON.parse(localStorage.getItem('plans_db_v26') || '{}');
-                    if(!db[selectedDay]) {
-                        db[selectedDay] = [];
-                    }
-                    
-                    const newPlan = {
-                        id: Date.now(),
-                        time: time,
-                        period: period,
-                        cat: 'morning'
-                    };
-                    
-                    db[selectedDay].push(newPlan);
-                    localStorage.setItem('plans_db_v26', JSON.stringify(db));
-                    
+                    // 處理 morning call
+                    const dayRef = database.ref(`plans/${selectedDay}`);
+                    const snapshot = await dayRef.once('value');
+                    let existingPlans = snapshot.val() || [];
+                    const newPlan = { id: Date.now(), time, period, cat: 'morning' };
+                    existingPlans.push(newPlan);
+                    await dayRef.set(existingPlans);
                     closeModal('add-modal-plan');
-                    updatePlanUI();
                     return;
                 }
-                
-                if(!location) {
-                    alert('請填寫景點名稱！');
-                    return;
-                }
-                
+
+                if (!location) { alert('請填寫景點名稱！'); return; }
+
                 const photoPromises = [];
                 for (let i = 1; i <= 5; i++) {
                     const fileInput = document.getElementById(`input-img${i}`);
                     const captionInput = document.getElementById(`input-caption${i}`);
-                    
                     if (fileInput && fileInput.files && fileInput.files[0]) {
                         const promise = compress(fileInput.files[0], 0.6, 300)
                             .then(compressedData => ({
@@ -2755,56 +2630,79 @@
                         photoPromises.push(promise);
                     }
                 }
-                
                 const photos = await Promise.all(photoPromises);
-                
-                const db = JSON.parse(localStorage.getItem('plans_db_v26') || '{}');
-                if(!db[selectedDay]) {
-                    db[selectedDay] = [];
-                }
-                
+
+                const dayRef = database.ref(`plans/${selectedDay}`);
+                const snapshot = await dayRef.once('value');
+                let existingPlans = snapshot.val() || [];
+
                 const newPlan = {
                     id: Date.now(),
-                    time: time,
-                    period: period,
-                    drive: drive,
-                    location: location,
-                    desc: desc,
-                    address: address,
+                    time, period, drive, location, desc, address,
                     photos: photos.length > 0 ? photos : null,
-                    cat: cat
+                    cat
                 };
-                
-                db[selectedDay].push(newPlan);
-                localStorage.setItem('plans_db_v26', JSON.stringify(db));
-                
+                existingPlans.push(newPlan);
+
+                await dayRef.set(existingPlans);
+
                 closeModal('add-modal-plan');
-                updatePlanUI();
-                
             } catch (error) {
                 console.error('儲存失敗:', error);
                 alert('儲存失敗，請重試');
             }
         }
 
-        function delEntry(id) { 
-            const db = JSON.parse(localStorage.getItem('plans_db_v26') || '{}');
-            if (db[selectedDay]) {
-                db[selectedDay] = db[selectedDay].filter(x => x.id !== id);
-                localStorage.setItem('plans_db_v26', JSON.stringify(db));
-                updatePlanUI();
-            }
+        // 修改後的 delEntry
+        function delEntry(id) {
+            const dayRef = database.ref(`plans/${selectedDay}`);
+            dayRef.once('value').then(snapshot => {
+                let plans = snapshot.val() || [];
+                plans = plans.filter(x => x.id !== id);
+                dayRef.set(plans).then(() => {
+                    // 可選：同步更新 localStorage
+                    const db = JSON.parse(localStorage.getItem('plans_db_v26') || '{}');
+                    db[selectedDay] = plans;
+                    localStorage.setItem('plans_db_v26', JSON.stringify(db));
+                });
+            });
         }
 
-        function toggleDeleteMode() { 
-            delModePlans = !delModePlans; 
-            updatePlanUI(); 
+        // 其他原有函數保持不變
+        function renderWeatherCards() {
+            const row = document.getElementById('weather-row');
+            if(!row) return;
+            row.innerHTML = ""; 
+            WEATHER_POINTS.forEach((p, index) => {
+                const data = weatherData[index % weatherData.length];
+                row.innerHTML += `
+                    <div class="weather-card">
+                        <div class="weather-card-top">
+                            <span class="weather-temp-val">${data.temp}°C</span>
+                            <span class="weather-temp-range">${data.min}° ~ ${data.max}°</span>
+                            <i class="${data.icon} weather-icon"></i>
+                            <span class="weather-region">${p.name}</span>
+                        </div>
+                        <div class="weather-divider-container">
+                            <div class="weather-divider"></div>
+                            <div class="divider-left-circle"></div>
+                            <div class="divider-right-circle"></div>
+                        </div>
+                        <div class="weather-card-bottom">
+                            <img src="${p.image}" alt="${p.name}" class="weather-bottom-image" onerror="this.src='https://via.placeholder.com/148x82?text=${p.name}'">
+                        </div>
+                    </div>`;
+            });
         }
 
-        function toggleSightDeleteMode() {
-            delModeSights = !delModeSights;
-            renderSights();
+        function renderDateTabs() {
+            const days = ["6MAR", "7MAR", "8MAR", "9MAR", "10MAR", "11MAR", "12MAR", "13MAR", "14MAR", "15MAR", "16MAR", "17MAR", "18MAR"];
+            document.getElementById('scrolling-dates').innerHTML = days.map(d => `<button onclick="setDay('${d}')" class="date-btn ${d===selectedDay?'date-btn-active':''}">${d}</button>`).join('');
         }
+
+        function toggleDeleteMode() { delModePlans = !delModePlans; updatePlanUI(); }
+
+        function toggleSightDeleteMode() { delModeSights = !delModeSights; renderSights(); }
 
         function openSightModal() {
             document.getElementById('add-modal-sight').classList.remove('hide');
@@ -2815,58 +2713,28 @@
         function updateFileStatus(type) {
             const input = document.getElementById(type === 'cover' ? 'sight-main-pic' : 'sight-album-pics');
             const statusSpan = document.getElementById(type === 'cover' ? 'cover-file-status' : 'album-file-status');
-            
             if (input.files && input.files.length > 0) {
-                if (type === 'cover') {
-                    statusSpan.innerText = input.files[0].name;
-                } else {
-                    statusSpan.innerText = `${input.files.length} 個檔案已選`;
-                }
-            } else {
-                statusSpan.innerText = '未選擇任何檔案';
-            }
+                if (type === 'cover') statusSpan.innerText = input.files[0].name;
+                else statusSpan.innerText = `${input.files.length} 個檔案已選`;
+            } else statusSpan.innerText = '未選擇任何檔案';
         }
 
-        function updateAlbumStatus() {
-            updateFileStatus('album');
-        }
+        function updateAlbumStatus() { updateFileStatus('album'); }
 
-        function getRandomRotation() {
-            return (Math.random() * 10 - 5).toFixed(1);
-        }
-
-        function getRandomTapeColor() {
-            const colors = ['#6E765E', '#A8825E', '#a67988', '#733e4e'];
-            return colors[Math.floor(Math.random() * colors.length)];
-        }
+        function getRandomRotation() { return (Math.random() * 10 - 5).toFixed(1); }
+        function getRandomTapeColor() { const colors = ['#6E765E', '#A8825E', '#a67988', '#733e4e']; return colors[Math.floor(Math.random() * colors.length)]; }
 
         async function handleSaveSight() {
             const n = document.getElementById('sight-title').value; 
             const b = document.getElementById('sight-body').value; 
             const mf = document.getElementById('sight-main-pic').files[0]; 
             const af = document.getElementById('sight-album-pics').files;
-            
-            if(!n || !mf) {
-                alert('請填寫景點名稱並上傳封面照片');
-                return;
-            }
-            
+            if(!n || !mf) { alert('請填寫景點名稱並上傳封面照片'); return; }
             const cover = await compress(mf, 0.7, 110);
             const album = [];
-            for (let i = 0; i < Math.min(af.length, 3); i++) { 
-                album.push(await compress(af[i], 0.6, 400)); 
-            }
-            
+            for (let i = 0; i < Math.min(af.length, 3); i++) { album.push(await compress(af[i], 0.6, 400)); }
             const db = JSON.parse(localStorage.getItem('sights_db_v26') || '[]');
-            const newSight = { 
-                id: Date.now(), 
-                n, 
-                b, 
-                cover, 
-                album,
-                rotation: getRandomRotation(),
-                tapeColor: getRandomTapeColor()
-            };
+            const newSight = { id: Date.now(), n, b, cover, album, rotation: getRandomRotation(), tapeColor: getRandomTapeColor() };
             db.unshift(newSight);
             localStorage.setItem('sights_db_v26', JSON.stringify(db));
             closeModal('add-modal-sight'); 
@@ -2876,10 +2744,8 @@
         function renderSights() {
             const db = JSON.parse(localStorage.getItem('sights_db_v26') || '[]');
             const container = document.getElementById('sights-render');
-            
             container.innerHTML = db.map(s => {
                 const tapeLeft = Math.random() * 60 + 20;
-                
                 return `
                 <div class="polaroid-card" style="position: relative;">
                     <div class="polaroid-photo-container" onclick="openLightbox(${s.id})">
@@ -2897,22 +2763,13 @@
             const db = JSON.parse(localStorage.getItem('sights_db_v26') || '[]');
             const sight = db.find(s => s.id === sightId);
             if (!sight) return;
-            
             currentSightId = sightId;
-            
             const allPhotos = [sight.cover, ...(sight.album || [])];
-            
-            const scrollContainer = document.getElementById('lightbox-scroll');
-            scrollContainer.innerHTML = allPhotos.map(photo => 
-                `<img src="${photo}" class="lightbox-image">`
-            ).join('');
-            
+            document.getElementById('lightbox-scroll').innerHTML = allPhotos.map(photo => `<img src="${photo}" class="lightbox-image">`).join('');
             document.getElementById('photo-lightbox').classList.remove('hide');
         }
 
-        function closeLightbox() {
-            document.getElementById('photo-lightbox').classList.add('hide');
-        }
+        function closeLightbox() { document.getElementById('photo-lightbox').classList.add('hide'); }
 
         function deleteSight(id) {
             let db = JSON.parse(localStorage.getItem('sights_db_v26') || '[]');
@@ -2928,22 +2785,12 @@
 
         function tapKey(k) { 
             if(k==='C') calcText="0"; 
-            else if(k==='=') { 
-                try { calcText = eval(calcText).toString(); } 
-                catch{ calcText="Err"; } 
-            } else { 
-                calcText = calcText === "0" ? k : calcText + k; 
-            } 
+            else if(k==='=') { try { calcText = eval(calcText).toString(); } catch{ calcText="Err"; } } 
+            else { calcText = calcText === "0" ? k : calcText + k; } 
             document.getElementById('calc-result').innerText = calcText; 
         }
 
-        function toHKD() { 
-            tapKey('='); 
-            if(calcText !== "Err") { 
-                calcText = (parseFloat(calcText) * 1.09).toFixed(2); 
-                document.getElementById('calc-result').innerText = calcText; 
-            } 
-        }
+        function toHKD() { tapKey('='); if(calcText !== "Err") { calcText = (parseFloat(calcText) * 1.09).toFixed(2); document.getElementById('calc-result').innerText = calcText; } }
 
         function switchTab(id, btn) {
             document.querySelectorAll('.tab-page').forEach(p => p.classList.add('hide'));
@@ -2951,8 +2798,6 @@
             document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('nav-active'));
             btn.classList.add('nav-active');
             window.scrollTo(0,0);
-            
-            // 如果切換到清單頁，確保有顯示預設清單
             if (id === 'page-list') {
                 setTimeout(() => {
                     const firstLogo = document.querySelector('.logo-selector');
@@ -2961,67 +2806,37 @@
             }
         }
 
-        function closeModal(id) { 
-            document.getElementById(id).classList.add('hide'); 
-            if (id === 'add-modal-plan') {
-                resetModal();
-            }
-        }
+        function closeModal(id) { document.getElementById(id).classList.add('hide'); if (id === 'add-modal-plan') resetModal(); }
+        function openModal(id) { document.getElementById(id).classList.remove('hide'); }
+        function navGps(a) { window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(a)}&travelmode=driving`); }
 
-        function openModal(id) { 
-            document.getElementById(id).classList.remove('hide'); 
-        }
-
-        function navGps(a) { 
-            window.open(`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(a)}&travelmode=driving`); 
-        }
-
-        // 行李清單顯示函數
         function showChecklist(logoId, btn) {
-            // 更新按鈕 active 狀態
             document.querySelectorAll('.logo-selector').forEach(b => b.classList.remove('active'));
             if (btn) btn.classList.add('active');
-            
             const data = checklistData[logoId];
             if (!data) return;
-            
             const container = document.getElementById('checklist-container');
             container.innerHTML = '';
-            
             data.forEach(card => {
                 const cardDiv = document.createElement('div');
                 cardDiv.className = 'checklist-card';
-                
-                // 加入標題
                 const heading = document.createElement('div');
                 heading.className = 'checklist-heading';
                 heading.textContent = card.heading;
                 cardDiv.appendChild(heading);
-                
-                // 加入項目列表
                 card.items.forEach(item => {
                     const itemDiv = document.createElement('div');
                     itemDiv.className = 'checklist-item';
-                    
-                    // 項目名稱
                     const itemText = document.createElement('span');
                     itemText.textContent = item;
-                    
-                    // 勾選框
                     const checkbox = document.createElement('input');
                     checkbox.type = 'checkbox';
                     checkbox.className = 'checklist-checkbox';
-                    
-                    // 建立唯一 ID 用於儲存狀態
                     const itemId = `${logoId}_${card.heading}_${item}`;
-                    
-                    // 讀取儲存的狀態
                     if (checklistState[itemId]) {
                         checkbox.checked = true;
                         itemDiv.classList.add('checked');
                     }
-                    
-                    // 勾選事件
                     checkbox.addEventListener('change', function(e) {
                         if (this.checked) {
                             itemDiv.classList.add('checked');
@@ -3030,54 +2845,28 @@
                             itemDiv.classList.remove('checked');
                             delete checklistState[itemId];
                         }
-                        // 儲存到 localStorage
                         localStorage.setItem('checklist_state', JSON.stringify(checklistState));
                     });
-                    
                     itemDiv.appendChild(itemText);
                     itemDiv.appendChild(checkbox);
                     cardDiv.appendChild(itemDiv);
                 });
-                
                 container.appendChild(cardDiv);
             });
         }
 
-        // 注意事項相關函數
-        function openNoticeModal() {
-            document.getElementById('notice-modal').classList.remove('hide');
-        }
-
-        function closeNoticeModal() {
-            document.getElementById('notice-modal').classList.add('hide');
-            document.getElementById('notice-text').value = '';
-            document.getElementById('notice-image').value = '';
-        }
+        function openNoticeModal() { document.getElementById('notice-modal').classList.remove('hide'); }
+        function closeNoticeModal() { document.getElementById('notice-modal').classList.add('hide'); document.getElementById('notice-text').value = ''; document.getElementById('notice-image').value = ''; }
 
         async function saveNotice() {
             const text = document.getElementById('notice-text').value.trim();
-            if (!text) {
-                alert('請輸入注意事項內容');
-                return;
-            }
-
+            if (!text) { alert('請輸入注意事項內容'); return; }
             const imageFile = document.getElementById('notice-image').files[0];
             let imageData = null;
-
-            if (imageFile) {
-                // 壓縮圖片為 140*140 尺寸
-                imageData = await compress(imageFile, 0.7, 140);
-            }
-
-            const newNotice = {
-                id: Date.now(),
-                text: text,
-                image: imageData
-            };
-
+            if (imageFile) imageData = await compress(imageFile, 0.7, 140);
+            const newNotice = { id: Date.now(), text, image: imageData };
             notices.unshift(newNotice);
             localStorage.setItem('notices', JSON.stringify(notices));
-            
             renderNotices();
             closeNoticeModal();
         }
@@ -3091,25 +2880,30 @@
         function renderNotices() {
             const container = document.getElementById('notice-list');
             if (!container) return;
-
-            // 如果沒有注意事項，不顯示任何內容
-            if (notices.length === 0) {
-                container.innerHTML = '';
-                return;
-            }
-
+            if (notices.length === 0) { container.innerHTML = ''; return; }
             container.innerHTML = notices.map(notice => `
                 <div class="notice-item" data-id="${notice.id}">
                     <button class="notice-delete-btn" onclick="deleteNotice(${notice.id})">×</button>
-                    ${notice.image ? `
-                        <div class="notice-image-container">
-                            <img src="${notice.image}" class="notice-image" alt="注意事項圖片">
-                        </div>
-                    ` : ''}
+                    ${notice.image ? `<div class="notice-image-container"><img src="${notice.image}" class="notice-image" alt="注意事項圖片"></div>` : ''}
                     <div class="notice-content">${notice.text}</div>
                 </div>
             `).join('');
         }
+
+        window.onload = () => {
+            renderWeatherCards();
+            renderDateTabs();
+            updatePlanUI();
+            renderSights();
+            setupKeypad();
+            renderNotices();
+            setTimeout(() => {
+                const firstLogo = document.querySelector('.logo-selector');
+                if (firstLogo) showChecklist('logo1', firstLogo);
+            }, 100);
+            // 初次設定監聽
+            setDay(selectedDay);
+        };
     </script>
 </body>
 </html>
