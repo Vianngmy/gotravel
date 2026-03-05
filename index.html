@@ -2553,10 +2553,11 @@
             }).join('');
         }
 
-        // 修改後的 setDay
+        // 修正後的 setDay (加入了 updatePlanUI)
         function setDay(d) {
             selectedDay = d;
             renderDateTabs();
+            updatePlanUI(); // 更新酒店卡片和日期標籤
             // 監聽 Firebase 資料變化
             const dayRef = database.ref(`plans/${selectedDay}`);
             dayRef.off(); // 移除舊監聽
